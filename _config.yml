@@ -1,79 +1,33 @@
-# --- General options --- #
-
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://sifnoc.github.io"
 baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://sifnoc.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
-# Name of website
 title: Sifnoc Idea
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Data Analytic logs for Aviation and Weather!
 
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
 navbar-links:
-  About Me: "About"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  About Me: "aboutme"
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/profile.png"
 
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Jin Hwan
+  name: JinHwan
   email: "sifnoc09@gmail.com"
-  facebook: sifnoc09  # eg. daattali
-  github: sifnoc    # eg. daattali
-  twitter:  # eg. daattali
-  linkedin:  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow:  # eg. "3943160/daattali"
+  facebook : sifnoc09
+  github: sifnoc   
  
-# Select which links to show in the footer
 footer-links-active:
-  rss: false
   facebook: true
   email: true
-  twitter: false
   github: true
-  linkedin: false 
-  stackoverflow: false
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "sifnoc.net"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "sifnoc.net"  
 
-# --- Misc --- #
+google_analytics: "UA-90769876-1"
 
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
-
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
 timezone: "Asia/Seoul"
-markdown: kramdown
+markdown: kramdown 
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
@@ -81,7 +35,6 @@ paginate: 5
 kramdown:
   input: GFM
 
-# Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
@@ -97,7 +50,6 @@ defaults:
       layout: "page"
       show-avatar: true
 
-# Exclude these files from production site
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -106,7 +58,6 @@ exclude:
   - CNAME
   - Vagrantfile
 
-# prose.io config
 prose:
   rooturl: '_posts'
   media: 'img'
@@ -117,6 +68,7 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
+    - /_notebooks
     - /css
     - /img
     - /js
@@ -153,6 +105,3 @@ prose:
 
 gems:
   - jekyll-paginate
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189

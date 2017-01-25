@@ -1,5 +1,6 @@
 # project
 _site
+_notebooks
 .sass-cache
 .vagrant
 
